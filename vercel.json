@@ -1,12 +1,9 @@
 {
+    "cleanUrls": true,
     "rewrites": [
         {
-            "source": "/(.*)php/contact-form.php",
-            "destination": "/api/contact-form"
-        },
-        {
-            "source": "/(.*)php/newsletter-subscribe.php",
-            "destination": "/api/newsletter-subscribe"
+            "source": "/php/(.*)",
+            "destination": "/api/$1"
         }
     ]
 }
