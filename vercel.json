@@ -1,19 +1,12 @@
 {
-    "routes": [
+    "rewrites": [
         {
-            "src": "/php/(.*).php",
-            "dest": "/api/$1"
+            "source": "/(.*)php/contact-form.php",
+            "destination": "/api/contact-form"
         },
         {
-            "src": "/api/(.*).php",
-            "dest": "/api/$1"
-        },
-        {
-            "handle": "filesystem"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/$1"
+            "source": "/(.*)php/newsletter-subscribe.php",
+            "destination": "/api/newsletter-subscribe"
         }
     ]
 }
