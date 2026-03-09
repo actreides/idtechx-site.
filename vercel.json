@@ -1,0 +1,20 @@
+{
+    "functions": {
+        "php/*.php": {
+            "runtime": "vercel-php@0.7.2"
+        }
+    },
+    "routes": [
+        {
+            "src": "/php/(.*).php",
+            "dest": "/php/$1.php"
+        },
+        {
+            "handle": "filesystem"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/$1"
+        }
+    ]
+}

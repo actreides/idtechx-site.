@@ -1,0 +1,50 @@
+/* IDTECHX Custom Styles */
+:root {
+    --primary-color: #0B3C5D;
+    --secondary-color: #00A8E8;
+    --accent-color: #6C63FF;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.header-logo img {
+    max-height: 40px;
+}
+
+.badge-coming-soon {
+    background-color: var(--accent-color);
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+/* Language Selector Flags */
+.header-nav-features-languages .flag {
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-nav-features-languages .no-skin {
+    display: flex;
+    align-items: center;
+}
